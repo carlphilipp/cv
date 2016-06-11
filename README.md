@@ -12,6 +12,7 @@ My changes includes:
 
 Need to use XeLateX to compile/build the CV.
 
+See result [here](https://github.com/carlphilipp/cv/blob/master/CV.pdf).
 
 Original read me file:
 
