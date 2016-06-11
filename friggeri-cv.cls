@@ -19,6 +19,7 @@
 
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
+\definecolor{midgray}{HTML}{6e6e6e}
 \definecolor{lightgray}{HTML}{999999}
 
 \definecolor{green}{HTML}{C2E15F}
@@ -147,10 +148,10 @@
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[5]{%
   \small{#1}&\parbox[t]{13.2cm}{%
-    	\textbf{#2} {\small\addfontfeature{Color=darkgray} #3}%
+    	\textbf{#2} \hspace{1mm}{\small\addfontfeature{Color=darkgray} #3}%
     	\hfill%
     {
-	    \footnotesize\addfontfeature{Color=lightgray} #4
+	    \footnotesize\addfontfeature{Color=midgray} #4
     }\\%
     	#5\vspace{\parsep}%
   }\\}
