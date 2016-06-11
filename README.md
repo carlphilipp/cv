@@ -1,6 +1,8 @@
 # Carl-Philipp Harmant's CV
 
-Original ReadMe:
+
+
+Original read me file:
 
 # About
 Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `ugly` option which renders in black and white, and reverts the header to dark on light, if printing on cheap paper is needed).
