@@ -1,5 +1,16 @@
 # Carl-Philipp Harmant's CV
 
+Forked cv from [afriggeri](https://github.com/martinbjeldbak/afriggeri-cv) and cherry pick social icons from [martinbjeldbak](https://github.com/martinbjeldbak/CV).
+My changes includes:
+* Wider main layout
+* Update default blue color
+* Modify default list to add one more field
+* Reduce space for bullet lists
+* Remove bibligraphy
+* Modified default link color
+* Include fonts
+
+Need to use XeLateX to compile/build the CV.
 
 
 Original read me file:
