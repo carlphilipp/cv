@@ -1,6 +1,6 @@
 # Carl-Philipp Harmant's CV
 
-Forked CV from [afriggeri](https://github.com/martinbjeldbak/afriggeri-cv) and cherry picked social icons from [martinbjeldbak](https://github.com/martinbjeldbak/CV).
+Forked CV from [afriggeri](https://github.com/afriggeri) and cherry picked social icons from [martinbjeldbak](https://github.com/martinbjeldbak/CV).
 My changes includes:
 * Wider main layout
 * Update default blue color
