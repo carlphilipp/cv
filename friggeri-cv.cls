@@ -168,10 +168,9 @@
   \let\oldsection\section
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
-  }
-  
+  }  
   \begin{textblock}{3.6}(0.5, 4.28)
-  \begin{flushright}
+  \begin{flushright}  
   \obeycr
 }{%
   \restorecr
@@ -186,32 +185,25 @@
 
 \RequirePackage{fontawesome}
 
-% Add instagram logo to fontawesome
-\expandafter\def\csname faicon@instagram\endcsname           {\symbol{"F16D}}  \def\faInstagramSquare {{\FA\csname faicon@instagram\endcsname}}
-
 \newcommand{\phone}[1]{%
   \href{tel:#1}{#1}
 }
 
-\newcommand{\website}[1]{%
-  \href{http://#1}{#1}
-}
+%\newcommand{\website}[1]{%
+%  \href{http://#1}{#1}
+%}
 
 \newcommand{\email}[1]{%
   \href{mailto:#1}{#1}
 }
 
-\newcommand{\instagram}[1]{%
-  \social{https://instagram.com}{\faInstagramSquare}{#1}
-}
+%\newcommand{\facebook}[1]{%
+%  \social{https://facebook.com}{\faFacebookSquare}{#1}
+%}
 
-\newcommand{\facebook}[1]{%
-  \social{https://facebook.com}{\faFacebookSquare}{#1}
-}
-
-\newcommand{\twitter}[1]{%
-  \social{https://twitter.com}{\faTwitterSquare}{#1}
-}
+%\newcommand{\twitter}[1]{%
+%  \social{https://twitter.com}{\faTwitterSquare}{#1}
+%}
 
 \newcommand{\github}[1]{%
   \social{https://github.com}{\faGithubSquare}{#1}
@@ -233,13 +225,14 @@
 \RequirePackage[left=5cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
-    colorlinks=true,       
+    colorlinks=false,      
+    hidelinks=true,
     linkcolor=grey,          
     citecolor=grey,        
     filecolor=grey,      
-    urlcolor = grey}
+    urlcolor=grey}
     
 % A fix for \href{}{} colors not working with fontspec
-\makeatletter
-\def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=#1}}
-\makeatother
+%\makeatletter
+%\def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=#1}}
+%\makeatother
