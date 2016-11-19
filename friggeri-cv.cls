@@ -142,20 +142,43 @@
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}
 {%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
-  \end{tabular*}
+   \end{tabular*}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
-\newcommand{\entry}[5]{%
-  \small{#1}&\parbox[t]{13.2cm}{%
-    	\textbf{#2} \hspace{1mm}{\small\addfontfeature{Color=darkgray} #3}%
+\newcommand{\entry}[6]{%
+  %\small{#1}\newline #2
+  %\def\A{#2}
+  %\ifdefined\A \small{#2}&\\ \fi
+
+    \begin{tabular}{ p{2.3cm} l }
+    \small{#1}
+	\def\date{#2}
+	\ifx\date\empty
+   		% #1 is empty
+	\else
+   		% #1 is nonempty
+   		\newline\scriptsize{#2}
+	\fi
+	%\ifdefined\A\newline\small{#2}\fi
+    
+    & 
+    \parbox[t]{13.2cm}{%
+    	\textbf{#3} \hspace{1mm}{\small\addfontfeature{Color=darkgray} #4}%
     	\hfill%
     {
-	    \footnotesize\addfontfeature{Color=midgray} #4
+	    \footnotesize\addfontfeature{Color=midgray} #5
     }\\%
-    	#5\vspace{\parsep}%
-  }\\}
+    	#6\vspace{\parsep}%
+  }\\
+    \end{tabular}  
+  
+  
+  
+  
+  \\
+  }
 
 
 %%%%%%%%%%%%%%
